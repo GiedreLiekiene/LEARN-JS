@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let number = 7;
+        let day = "sdd";
+
+        if (number < 6) {
+            console.log ("Yes");
+        } else {
+            console.log ("No");
+        }
+
+        if (day === 'sat') {
+            console.log("Sat");
+        } else if (day === "mon") {
+            console.log ("Mon");
+        } else if (day === "fri") {
+            console.log ("Fri");
+        } else {
+            console.log ("No day find")
+        }
+        day = "mon";
+        console.log("---------")
+        switch (day) {
+            case "sat": //day "mon" === "sat" false
+                console.log("Sat");
+                break;
+            case "mon": //day "mon" === "sat" true
+                console.log("Mon");
+                break;
+            case "fri":
+                console.log("Fri");
+                break;
+            default:
+                console.log("No day find");
+        }
+
+        console.log("+++++++++");
+        let count = 1;
+        switch (count) {
+            case 1:
+                console.log("This one")
+                break;
+            case 2:
+                console.log("This two")
+                break;
+            default:
+                console.log("nothing")
+        }
+
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
